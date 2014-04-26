@@ -82,10 +82,12 @@
     <Reference Include="EPiServer, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\EPiServer.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EPiServer.ApplicationModules, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\EPiServer.ApplicationModules.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EPiServer.Business.Commerce">
       <HintPath>..\..\Components\EPiServer.Business.Commerce.dll</HintPath>
@@ -123,34 +125,42 @@
     <Reference Include="EPiServer.Configuration, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\EPiServer.Configuration.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EPiServer.Data, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\EPiServer.Data.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EPiServer.Data.Cache, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\EPiServer.Data.Cache.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EPiServer.Enterprise, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\EPiServer.Enterprise.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EPiServer.Events, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\EPiServer.Events.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EPiServer.Framework, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\EPiServer.Framework.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EPiServer.Licensing, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\EPiServer.Licensing.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EPiServer.Shell, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\EPiServer.Shell.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="HttpWebAdapters">
       <HintPath>..\..\Components\HttpWebAdapters.dll</HintPath>
@@ -158,6 +168,7 @@
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Iesi.Collections">
       <HintPath>..\..\Components\Iesi.Collections.dll</HintPath>
@@ -168,6 +179,7 @@
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\log4net.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Lucene.Net">
       <HintPath>..\..\Components\Lucene.Net.dll</HintPath>
@@ -244,18 +256,22 @@
     <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\Microsoft.ReportViewer.WebForms.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Web.Services3">
       <HintPath>..\..\Components\Microsoft.Web.Services3.dll</HintPath>
@@ -269,6 +285,7 @@
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="NHibernate">
       <HintPath>..\..\Components\NHibernate.dll</HintPath>
@@ -285,984 +302,39 @@
     <Reference Include="StructureMap, Version=2.6.4.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\StructureMap.dll</HintPath>
+      <Private>True</Private>
     </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="Validators">
       <HintPath>..\..\Components\Validators.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="App_GlobalResources\Asset\AssetStrings.da.designer.cs" />
-    <Compile Include="App_GlobalResources\Asset\AssetStrings.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AssetStrings.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Asset\AssetStrings.designer.cs" />
-    <Compile Include="App_GlobalResources\Asset\AssetStrings.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\Asset\AssetStrings.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AssetStrings.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Asset\AssetStrings.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\Asset\AssetStrings.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AssetStrings.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Asset\AssetStrings.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\Asset\AssetStrings.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AssetStrings.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Asset\AssetStrings.no.designer.cs" />
-    <Compile Include="App_GlobalResources\Asset\AssetStrings.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AssetStrings.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Asset\AssetStrings.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\Asset\AssetStrings.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AssetStrings.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Asset\AssetStrings1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AssetStrings.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Catalog\CatalogStrings.da.designer.cs" />
-    <Compile Include="App_GlobalResources\Catalog\CatalogStrings.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CatalogStrings.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Catalog\CatalogStrings.designer.cs" />
-    <Compile Include="App_GlobalResources\Catalog\CatalogStrings.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\Catalog\CatalogStrings.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CatalogStrings.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Catalog\CatalogStrings.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\Catalog\CatalogStrings.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CatalogStrings.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Catalog\CatalogStrings.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\Catalog\CatalogStrings.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CatalogStrings.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Catalog\CatalogStrings.no.designer.cs" />
-    <Compile Include="App_GlobalResources\Catalog\CatalogStrings.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CatalogStrings.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Catalog\CatalogStrings.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\Catalog\CatalogStrings.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CatalogStrings.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Catalog\CatalogStrings1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CatalogStrings.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\CommerceManager.da.designer.cs" />
-    <Compile Include="App_GlobalResources\CommerceManager.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CommerceManager.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\CommerceManager.designer.cs" />
-    <Compile Include="App_GlobalResources\CommerceManager.en.designer.cs" />
-    <Compile Include="App_GlobalResources\CommerceManager.en1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CommerceManager.en.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\CommerceManager.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\CommerceManager.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CommerceManager.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\CommerceManager.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\CommerceManager.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CommerceManager.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\CommerceManager.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\CommerceManager.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CommerceManager.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\CommerceManager.no.designer.cs" />
-    <Compile Include="App_GlobalResources\CommerceManager.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CommerceManager.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\CommerceManager.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\CommerceManager.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CommerceManager.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\CommerceManager1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CommerceManager.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\ConsoleResources.da.designer.cs" />
-    <Compile Include="App_GlobalResources\ConsoleResources.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ConsoleResources.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\ConsoleResources.designer.cs" />
-    <Compile Include="App_GlobalResources\ConsoleResources.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\ConsoleResources.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ConsoleResources.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\ConsoleResources.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\ConsoleResources.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ConsoleResources.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\ConsoleResources.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\ConsoleResources.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ConsoleResources.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\ConsoleResources.no.designer.cs" />
-    <Compile Include="App_GlobalResources\ConsoleResources.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ConsoleResources.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\ConsoleResources.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\ConsoleResources.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ConsoleResources.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\ConsoleResources1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ConsoleResources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Content\ContentStrings.da.designer.cs" />
-    <Compile Include="App_GlobalResources\Content\ContentStrings.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ContentStrings.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Content\ContentStrings.designer.cs" />
-    <Compile Include="App_GlobalResources\Content\ContentStrings.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\Content\ContentStrings.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ContentStrings.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Content\ContentStrings.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\Content\ContentStrings.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ContentStrings.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Content\ContentStrings.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\Content\ContentStrings.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ContentStrings.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Content\ContentStrings.no.designer.cs" />
-    <Compile Include="App_GlobalResources\Content\ContentStrings.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ContentStrings.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Content\ContentStrings.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\Content\ContentStrings.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ContentStrings.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Content\ContentStrings1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ContentStrings.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Core\CoreStrings.da.designer.cs" />
-    <Compile Include="App_GlobalResources\Core\CoreStrings.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CoreStrings.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Core\CoreStrings.designer.cs" />
-    <Compile Include="App_GlobalResources\Core\CoreStrings.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\Core\CoreStrings.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CoreStrings.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Core\CoreStrings.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\Core\CoreStrings.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CoreStrings.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Core\CoreStrings.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\Core\CoreStrings.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CoreStrings.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Core\CoreStrings.no.designer.cs" />
-    <Compile Include="App_GlobalResources\Core\CoreStrings.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CoreStrings.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Core\CoreStrings.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\Core\CoreStrings.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CoreStrings.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Core\CoreStrings1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CoreStrings.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Customer\Customer.da.designer.cs" />
-    <Compile Include="App_GlobalResources\Customer\Customer.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Customer.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Customer\Customer.designer.cs" />
-    <Compile Include="App_GlobalResources\Customer\Customer.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\Customer\Customer.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Customer.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Customer\Customer.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\Customer\Customer.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Customer.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Customer\Customer.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\Customer\Customer.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Customer.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Customer\Customer.no.designer.cs" />
-    <Compile Include="App_GlobalResources\Customer\Customer.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Customer.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Customer\Customer.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\Customer\Customer.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Customer.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Customer\Customer1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Customer.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Customer\ProfileStrings.da.designer.cs" />
-    <Compile Include="App_GlobalResources\Customer\ProfileStrings.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ProfileStrings.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Customer\ProfileStrings.designer.cs" />
-    <Compile Include="App_GlobalResources\Customer\ProfileStrings.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\Customer\ProfileStrings.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ProfileStrings.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Customer\ProfileStrings.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\Customer\ProfileStrings.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ProfileStrings.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Customer\ProfileStrings.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\Customer\ProfileStrings.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ProfileStrings.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Customer\ProfileStrings.no.designer.cs" />
-    <Compile Include="App_GlobalResources\Customer\ProfileStrings.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ProfileStrings.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Customer\ProfileStrings.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\Customer\ProfileStrings.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ProfileStrings.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Customer\ProfileStrings1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ProfileStrings.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings.da.designer.cs" />
-    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DashboardStrings.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings.designer.cs" />
-    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DashboardStrings.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DashboardStrings.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DashboardStrings.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings.no.designer.cs" />
-    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DashboardStrings.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DashboardStrings.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DashboardStrings.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GlobalResources.da.designer.cs" />
-    <Compile Include="App_GlobalResources\GlobalResources.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalResources.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GlobalResources.designer.cs" />
-    <Compile Include="App_GlobalResources\GlobalResources.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\GlobalResources.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalResources.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GlobalResources.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\GlobalResources.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalResources.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GlobalResources.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\GlobalResources.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalResources.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GlobalResources.no.designer.cs" />
-    <Compile Include="App_GlobalResources\GlobalResources.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalResources.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GlobalResources.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\GlobalResources.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalResources.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GlobalResources1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalResources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\Common.da.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\Common.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\Common.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\Common.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\Common.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\Common.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\Common.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\Common.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\Common.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\Common.no.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\Common.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\Common.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\Common.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\Common1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Common.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\Global.da.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\Global.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Global.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\Global.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\Global.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\Global.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Global.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\Global.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\Global.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Global.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\Global.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\Global.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Global.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\Global.no.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\Global.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Global.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\Global.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\Global.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Global.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\Global1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Global.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls.da.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalFieldManageControls.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalFieldManageControls.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalFieldManageControls.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalFieldManageControls.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls.no.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalFieldManageControls.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalFieldManageControls.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalFieldManageControls.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls.da.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalFilterControls.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalFilterControls.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalFilterControls.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalFilterControls.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls.no.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalFilterControls.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalFilterControls.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalFilterControls.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo.da.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalMetaInfo.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalMetaInfo.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalMetaInfo.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalMetaInfo.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo.no.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalMetaInfo.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalMetaInfo.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GlobalMetaInfo.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter.da.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IbnFramework.Filter.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IbnFramework.Filter.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IbnFramework.Filter.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IbnFramework.Filter.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter.no.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IbnFramework.Filter.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IbnFramework.Filter.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IbnFramework.Filter.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo.da.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IbnFramework.GlobalMetaInfo.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IbnFramework.GlobalMetaInfo.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IbnFramework.GlobalMetaInfo.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IbnFramework.GlobalMetaInfo.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo.no.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IbnFramework.GlobalMetaInfo.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IbnFramework.GlobalMetaInfo.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IbnFramework.GlobalMetaInfo.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\MetaForm.da.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\MetaForm.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MetaForm.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\MetaForm.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\MetaForm.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\MetaForm.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MetaForm.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\MetaForm.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\MetaForm.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MetaForm.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\MetaForm.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\MetaForm.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MetaForm.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\MetaForm.no.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\MetaForm.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MetaForm.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\MetaForm.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\IbnFramework\MetaForm.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MetaForm.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\IbnFramework\MetaForm1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MetaForm.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Marketing\MarketingStrings.da.designer.cs" />
-    <Compile Include="App_GlobalResources\Marketing\MarketingStrings.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MarketingStrings.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Marketing\MarketingStrings.designer.cs" />
-    <Compile Include="App_GlobalResources\Marketing\MarketingStrings.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\Marketing\MarketingStrings.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MarketingStrings.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Marketing\MarketingStrings.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\Marketing\MarketingStrings.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MarketingStrings.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Marketing\MarketingStrings.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\Marketing\MarketingStrings.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MarketingStrings.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Marketing\MarketingStrings.no.designer.cs" />
-    <Compile Include="App_GlobalResources\Marketing\MarketingStrings.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MarketingStrings.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Marketing\MarketingStrings.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\Marketing\MarketingStrings.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MarketingStrings.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Marketing\MarketingStrings1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MarketingStrings.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Order\OrderStrings.da.designer.cs" />
-    <Compile Include="App_GlobalResources\Order\OrderStrings.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>OrderStrings.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Order\OrderStrings.designer.cs" />
-    <Compile Include="App_GlobalResources\Order\OrderStrings.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\Order\OrderStrings.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>OrderStrings.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Order\OrderStrings.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\Order\OrderStrings.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>OrderStrings.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Order\OrderStrings.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\Order\OrderStrings.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>OrderStrings.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Order\OrderStrings.no.designer.cs" />
-    <Compile Include="App_GlobalResources\Order\OrderStrings.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>OrderStrings.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Order\OrderStrings.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\Order\OrderStrings.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>OrderStrings.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Order\OrderStrings1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>OrderStrings.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Reporting\ReportingStrings.da.designer.cs" />
-    <Compile Include="App_GlobalResources\Reporting\ReportingStrings.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReportingStrings.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Reporting\ReportingStrings.designer.cs" />
-    <Compile Include="App_GlobalResources\Reporting\ReportingStrings.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\Reporting\ReportingStrings.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReportingStrings.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Reporting\ReportingStrings.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\Reporting\ReportingStrings.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReportingStrings.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Reporting\ReportingStrings.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\Reporting\ReportingStrings.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReportingStrings.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Reporting\ReportingStrings.no.designer.cs" />
-    <Compile Include="App_GlobalResources\Reporting\ReportingStrings.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReportingStrings.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Reporting\ReportingStrings.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\Reporting\ReportingStrings.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReportingStrings.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Reporting\ReportingStrings1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReportingStrings.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\SharedStrings.da.designer.cs" />
-    <Compile Include="App_GlobalResources\SharedStrings.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SharedStrings.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\SharedStrings.designer.cs" />
-    <Compile Include="App_GlobalResources\SharedStrings.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\SharedStrings.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SharedStrings.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\SharedStrings.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\SharedStrings.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SharedStrings.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\SharedStrings.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\SharedStrings.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SharedStrings.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\SharedStrings.no.designer.cs" />
-    <Compile Include="App_GlobalResources\SharedStrings.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SharedStrings.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\SharedStrings.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\SharedStrings.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SharedStrings.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\SharedStrings1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SharedStrings.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Shell\ShellStrings.da.designer.cs" />
-    <Compile Include="App_GlobalResources\Shell\ShellStrings.da1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ShellStrings.da.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Shell\ShellStrings.designer.cs" />
-    <Compile Include="App_GlobalResources\Shell\ShellStrings.fi.designer.cs" />
-    <Compile Include="App_GlobalResources\Shell\ShellStrings.fi1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ShellStrings.fi.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Shell\ShellStrings.fr.designer.cs" />
-    <Compile Include="App_GlobalResources\Shell\ShellStrings.fr1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ShellStrings.fr.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Shell\ShellStrings.nl.designer.cs" />
-    <Compile Include="App_GlobalResources\Shell\ShellStrings.nl1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ShellStrings.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Shell\ShellStrings.no.designer.cs" />
-    <Compile Include="App_GlobalResources\Shell\ShellStrings.no1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ShellStrings.no.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Shell\ShellStrings.sv.designer.cs" />
-    <Compile Include="App_GlobalResources\Shell\ShellStrings.sv1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ShellStrings.sv.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Shell\ShellStrings1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ShellStrings.resx</DependentUpon>
-    </Compile>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Web.Mvc" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Workflow.Runtime" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\log\placeholder.txt" />
@@ -1972,6 +1044,818 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="modulesbin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\Asset\AssetStrings.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetStrings.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Asset\AssetStrings.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetStrings.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Asset\AssetStrings.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetStrings.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Asset\AssetStrings.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetStrings.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Asset\AssetStrings.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetStrings.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Asset\AssetStrings.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetStrings.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Asset\AssetStrings1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Catalog\CatalogStrings.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogStrings.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Catalog\CatalogStrings.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogStrings.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Catalog\CatalogStrings.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogStrings.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Catalog\CatalogStrings.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogStrings.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Catalog\CatalogStrings.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogStrings.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Catalog\CatalogStrings.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogStrings.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Catalog\CatalogStrings1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CommerceManager.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommerceManager.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CommerceManager.en1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommerceManager.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CommerceManager.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommerceManager.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CommerceManager.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommerceManager.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CommerceManager.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommerceManager.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CommerceManager.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommerceManager.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CommerceManager.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommerceManager.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CommerceManager1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommerceManager.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ConsoleResources.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsoleResources.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ConsoleResources.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsoleResources.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ConsoleResources.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsoleResources.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ConsoleResources.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsoleResources.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ConsoleResources.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsoleResources.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ConsoleResources.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsoleResources.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ConsoleResources1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsoleResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Content\ContentStrings.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContentStrings.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Content\ContentStrings.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContentStrings.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Content\ContentStrings.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContentStrings.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Content\ContentStrings.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContentStrings.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Content\ContentStrings.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContentStrings.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Content\ContentStrings.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContentStrings.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Content\ContentStrings1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContentStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Core\CoreStrings.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoreStrings.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Core\CoreStrings.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoreStrings.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Core\CoreStrings.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoreStrings.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Core\CoreStrings.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoreStrings.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Core\CoreStrings.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoreStrings.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Core\CoreStrings.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoreStrings.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Core\CoreStrings1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoreStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Customer\Customer.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Customer.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Customer\Customer.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Customer.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Customer\Customer.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Customer.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Customer\Customer.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Customer.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Customer\Customer.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Customer.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Customer\Customer.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Customer.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Customer\Customer1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Customer.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Customer\ProfileStrings.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProfileStrings.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Customer\ProfileStrings.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProfileStrings.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Customer\ProfileStrings.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProfileStrings.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Customer\ProfileStrings.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProfileStrings.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Customer\ProfileStrings.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProfileStrings.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Customer\ProfileStrings.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProfileStrings.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Customer\ProfileStrings1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProfileStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DashboardStrings.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DashboardStrings.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DashboardStrings.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DashboardStrings.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DashboardStrings.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DashboardStrings.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Dashboard\DashboardStrings1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DashboardStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GlobalResources.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResources.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GlobalResources.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResources.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GlobalResources.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResources.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GlobalResources.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResources.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GlobalResources.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResources.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GlobalResources.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResources.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GlobalResources1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\Common.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\Common.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\Common.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\Common.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\Common.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\Common.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\Common1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\Global.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\Global.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\Global.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\Global.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\Global.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\Global.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\Global1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalFieldManageControls.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalFieldManageControls.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalFieldManageControls.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalFieldManageControls.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalFieldManageControls.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalFieldManageControls.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalFieldManageControls1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalFieldManageControls.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalFilterControls.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalFilterControls.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalFilterControls.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalFilterControls.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalFilterControls.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalFilterControls.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalFilterControls1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalFilterControls.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalMetaInfo.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalMetaInfo.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalMetaInfo.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalMetaInfo.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalMetaInfo.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalMetaInfo.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\GlobalMetaInfo1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalMetaInfo.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IbnFramework.Filter.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IbnFramework.Filter.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IbnFramework.Filter.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IbnFramework.Filter.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IbnFramework.Filter.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IbnFramework.Filter.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.Filter1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IbnFramework.Filter.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IbnFramework.GlobalMetaInfo.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IbnFramework.GlobalMetaInfo.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IbnFramework.GlobalMetaInfo.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IbnFramework.GlobalMetaInfo.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IbnFramework.GlobalMetaInfo.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IbnFramework.GlobalMetaInfo.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\IbnFramework.GlobalMetaInfo1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IbnFramework.GlobalMetaInfo.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\MetaForm.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MetaForm.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\MetaForm.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MetaForm.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\MetaForm.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MetaForm.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\MetaForm.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MetaForm.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\MetaForm.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MetaForm.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\MetaForm.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MetaForm.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IbnFramework\MetaForm1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MetaForm.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Marketing\MarketingStrings.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketingStrings.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Marketing\MarketingStrings.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketingStrings.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Marketing\MarketingStrings.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketingStrings.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Marketing\MarketingStrings.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketingStrings.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Marketing\MarketingStrings.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketingStrings.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Marketing\MarketingStrings.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketingStrings.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Marketing\MarketingStrings1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketingStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Order\OrderStrings.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderStrings.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Order\OrderStrings.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderStrings.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Order\OrderStrings.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderStrings.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Order\OrderStrings.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderStrings.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Order\OrderStrings.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderStrings.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Order\OrderStrings.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderStrings.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Order\OrderStrings1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Reporting\ReportingStrings.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportingStrings.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Reporting\ReportingStrings.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportingStrings.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Reporting\ReportingStrings.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportingStrings.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Reporting\ReportingStrings.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportingStrings.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Reporting\ReportingStrings.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportingStrings.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Reporting\ReportingStrings.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportingStrings.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Reporting\ReportingStrings1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportingStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\SharedStrings.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SharedStrings.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\SharedStrings.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SharedStrings.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\SharedStrings.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SharedStrings.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\SharedStrings.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SharedStrings.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\SharedStrings.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SharedStrings.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\SharedStrings.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SharedStrings.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\SharedStrings1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SharedStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Shell\ShellStrings.da1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShellStrings.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Shell\ShellStrings.fi1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShellStrings.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Shell\ShellStrings.fr1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShellStrings.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Shell\ShellStrings.nl1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShellStrings.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Shell\ShellStrings.no1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShellStrings.no.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Shell\ShellStrings.sv1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShellStrings.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Shell\ShellStrings1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShellStrings.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
