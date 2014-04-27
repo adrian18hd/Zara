@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="false" CodeBehind="MasterPage.master.cs" Inherits="Zara.Web.Views.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<title>Zara Shopping</title>
+	<link rel="stylesheet" href="/gui/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/gui/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="/gui/css/site.css" />
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+</head>
+<body>
+	<div class="container">
+		<nav class="header">
+			<ul class="nav nav-pills pull-right">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<h3 class="text-muted">Zara Commerce Site</h3>
+		</nav>
+		<asp:ContentPlaceHolder ID="MainContent" runat="server">
+		</asp:ContentPlaceHolder>
+	</div>
+
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

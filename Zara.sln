@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zara.Web", "Zara.Web\Zara.W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zara.Admin", "Zara.Admin\Zara.Admin.csproj", "{7C5C6F26-AAE6-49B4-8C99-285A13F03F3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zara.Importer", "Zara.Importer\Zara.Importer.csproj", "{48C02861-ECAC-4586-911F-C542FD38E2BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7C5C6F26-AAE6-49B4-8C99-285A13F03F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C5C6F26-AAE6-49B4-8C99-285A13F03F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C5C6F26-AAE6-49B4-8C99-285A13F03F3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48C02861-ECAC-4586-911F-C542FD38E2BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48C02861-ECAC-4586-911F-C542FD38E2BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48C02861-ECAC-4586-911F-C542FD38E2BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48C02861-ECAC-4586-911F-C542FD38E2BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

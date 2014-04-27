@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,9 +9,9 @@
     <ProjectGuid>{1502E55F-A6D6-490F-8AE9-2E83F768BE44}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EPiServer.Commerce.Sample</RootNamespace>
-    <AssemblyName>EPiServer.Commerce.Sample</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RootNamespace>Zara.Web</RootNamespace>
+    <AssemblyName>Zara.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SignAssembly>false</SignAssembly>
     <DelaySign>false</DelaySign>
@@ -52,11 +52,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="gui\img\" />
     <Folder Include="lang\" />
     <Folder Include="modules\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="gui\css\bootstrap-theme.min.css" />
+    <Content Include="gui\css\bootstrap.min.css" />
+    <Content Include="gui\css\site.css">
+      <DependentUpon>site.less</DependentUpon>
+    </Content>
+    <Content Include="gui\js\bootstrap.min.js" />
     <Content Include="IndexingService\IndexingService.svc" />
     <Content Include="log.config">
       <SubType>Designer</SubType>
@@ -71,6 +78,13 @@
     <Content Include="modulesbin\NuGet.Core.dll" />
     <Content Include="Services\ProductComment.svc" />
     <Content Include="Services\ProductRating.svc" />
+    <Content Include="Views\CommerceTemplates\ProductDetail\ZaraProductTemplate.aspx" />
+    <Content Include="Views\CommerceTemplates\ProductListing\Units\EntriesList.ascx" />
+    <Content Include="Views\CommerceTemplates\ProductListing\Units\SimpleProduct.ascx" />
+    <Content Include="Views\CommerceTemplates\ProductListing\Units\SubCategoriesList.ascx" />
+    <Content Include="Views\CommerceTemplates\ProductListing\ZaraCatalogNodeTemplate.aspx" />
+    <Content Include="Views\Pages\StartPage\CatalogNodes.ascx" />
+    <Content Include="Views\Pages\StartPage\StartPage.aspx" />
     <Content Include="web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -88,7 +102,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51795</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://adrian-pc:18001/</IISUrl>
+          <IISUrl>http://localhost:18001/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -508,12 +522,12 @@
     <Reference Include="System.Workflow.Runtime" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="System.Xml.Linq" />
     <!-- Additional dlls to prevent issue that dlls are auto-deleted when rebuild project -->
     <Reference Include="System.Web.DataVisualization">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\System.Web.DataVisualization.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="Validators, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\Validators.dll</HintPath>
@@ -526,6 +540,102 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MediachaseECF\Tools.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\CommerceInitialization.cs" />
+    <Compile Include="Business\Constants.cs" />
+    <Compile Include="CatalogModels\Category\ZaraCategoryContent.cs" />
+    <Compile Include="CatalogModels\Product\ZaraProductContent.cs" />
+    <Compile Include="CatalogModels\Product\ZaraVariantContent.cs" />
+    <Compile Include="Views\BaseClasses\ImageFile.cs" />
+    <Compile Include="Views\BaseClasses\RendererBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BaseClasses\RendererControlBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BaseClasses\SitePageDataBase.cs" />
+    <Compile Include="Views\BaseClasses\TemplatePageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CommerceTemplates\ProductDetail\ZaraProductTemplate.aspx.cs">
+      <DependentUpon>ZaraProductTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CommerceTemplates\ProductDetail\ZaraProductTemplate.aspx.designer.cs">
+      <DependentUpon>ZaraProductTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CommerceTemplates\ProductListing\Units\EntriesList.ascx.cs">
+      <DependentUpon>EntriesList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CommerceTemplates\ProductListing\Units\EntriesList.ascx.designer.cs">
+      <DependentUpon>EntriesList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CommerceTemplates\ProductListing\Units\SimpleProduct.ascx.cs">
+      <DependentUpon>SimpleProduct.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CommerceTemplates\ProductListing\Units\SimpleProduct.ascx.designer.cs">
+      <DependentUpon>SimpleProduct.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CommerceTemplates\ProductListing\Units\SubCategoriesList.ascx.cs">
+      <DependentUpon>SubCategoriesList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CommerceTemplates\ProductListing\Units\SubCategoriesList.ascx.designer.cs">
+      <DependentUpon>SubCategoriesList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CommerceTemplates\ProductListing\ZaraCatalogNodeTemplate.aspx.cs">
+      <DependentUpon>ZaraCatalogNodeTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CommerceTemplates\ProductListing\ZaraCatalogNodeTemplate.aspx.designer.cs">
+      <DependentUpon>ZaraCatalogNodeTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\StartPage\CatalogNodes.ascx.cs">
+      <DependentUpon>CatalogNodes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Pages\StartPage\CatalogNodes.ascx.designer.cs">
+      <DependentUpon>CatalogNodes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\StartPage\ContentTypes\CommerceSettingsBlock.cs" />
+    <Compile Include="Views\Pages\StartPage\ContentTypes\StartPage.cs" />
+    <Compile Include="Views\Pages\StartPage\StartPage.aspx.cs">
+      <DependentUpon>StartPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Pages\StartPage\StartPage.aspx.designer.cs">
+      <DependentUpon>StartPage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gui\css\site.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gui\css\site.css.map">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Zara.Importer\Zara.Importer.csproj">
+      <Project>{48c02861-ecac-4586-911f-c542fd38e2bf}</Project>
+      <Name>Zara.Importer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EPiServerFramework.config" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
