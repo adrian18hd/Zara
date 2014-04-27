@@ -78,6 +78,7 @@
     <Content Include="modulesbin\NuGet.Core.dll" />
     <Content Include="Services\ProductComment.svc" />
     <Content Include="Services\ProductRating.svc" />
+    <Content Include="Views\CommerceTemplates\ProductDetail\Units\VariantsSelector.ascx" />
     <Content Include="Views\CommerceTemplates\ProductDetail\ZaraProductTemplate.aspx" />
     <Content Include="Views\CommerceTemplates\ProductListing\Units\EntriesList.ascx" />
     <Content Include="Views\CommerceTemplates\ProductListing\Units\SimpleProduct.ascx" />
@@ -560,6 +561,13 @@
     <Compile Include="Views\BaseClasses\SitePageDataBase.cs" />
     <Compile Include="Views\BaseClasses\TemplatePageBase.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CommerceTemplates\ProductDetail\Units\VariantsSelector.ascx.cs">
+      <DependentUpon>VariantsSelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CommerceTemplates\ProductDetail\Units\VariantsSelector.ascx.designer.cs">
+      <DependentUpon>VariantsSelector.ascx</DependentUpon>
     </Compile>
     <Compile Include="Views\CommerceTemplates\ProductDetail\ZaraProductTemplate.aspx.cs">
       <DependentUpon>ZaraProductTemplate.aspx</DependentUpon>

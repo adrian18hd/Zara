@@ -7,18 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Zara.Web.Views.CommerceTemplates.ProductDetail {
+namespace Zara.Web.Views.CommerceTemplates.ProductDetail.Units {
     
     
-    public partial class ZaraProductTemplate {
+    public partial class VariantsSelector {
         
         /// <summary>
-        /// variantsSelector control.
+        /// rptColors control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Zara.Web.Views.CommerceTemplates.ProductDetail.Units.VariantsSelector variantsSelector;
+        protected global::System.Web.UI.WebControls.Repeater rptColors;
+        
+        /// <summary>
+        /// rptSizes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptSizes;
     }
 }
