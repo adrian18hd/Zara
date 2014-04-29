@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using EPiServer.Commerce.Catalog.ContentTypes;
 using Zara.Web.Views.BaseClasses;
 
@@ -12,6 +13,8 @@ namespace Zara.Web.Views.CommerceTemplates.ProductListing.Units
 			IEnumerable<NodeContent> nodes = ContentLoader.GetChildren<NodeContent>(CurrentData.ContentLink);
 			rptSubCategories.DataSource = nodes;
 			rptSubCategories.DataBind();
+
+			ltNoSubcategories.Visible = nodes == null || !nodes.Any();
 		}
 	}
 }

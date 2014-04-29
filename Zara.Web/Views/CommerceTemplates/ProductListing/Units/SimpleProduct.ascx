@@ -2,22 +2,9 @@
 
 <div class="col-lg-3">
 	<div class="thumbnail">
-		<img data-src="holder.js/100%x180" width="100" height="180" />
-		<h3><%=ZaraProductContent.DisplayName ?? ZaraProductContent.Name %></h3>
-		<dl class="dl-horizontal">
-			<dt>
-				Ref#: 
-			</dt>
-			<dd>
-				<%=ZaraProductContent.RefNumber %>
-			</dd>
-			<dt>
-				Model Height:
-			</dt>
-			<dd>
-				<%=ZaraProductContent.Height %>
-			</dd>
-		</dl>
+		<h5><%=ZaraProductContent.DisplayName ?? ZaraProductContent.Name %></h5>
+		<hr/>
+		Price: <%=Price.ToString("C2") %>
 		<div class="text-center">
 			<a class="btn btn-info" href="<%=GetUrl(ZaraProductContent) %>">Details</a>
 		</div>

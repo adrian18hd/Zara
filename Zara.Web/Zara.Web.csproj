@@ -551,6 +551,7 @@
     <Compile Include="CatalogModels\Category\ZaraCategoryContent.cs" />
     <Compile Include="CatalogModels\Product\ZaraProductContent.cs" />
     <Compile Include="CatalogModels\Product\ZaraVariantContent.cs" />
+    <Compile Include="Helpers\EntryHelper.cs" />
     <Compile Include="Views\BaseClasses\ImageFile.cs" />
     <Compile Include="Views\BaseClasses\RendererBase.cs">
       <SubType>ASPXCodeBehind</SubType>

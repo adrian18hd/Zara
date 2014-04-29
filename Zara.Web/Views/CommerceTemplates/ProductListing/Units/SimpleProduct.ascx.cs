@@ -1,6 +1,7 @@
 ﻿using System;
 using EPiServer.Commerce.Catalog.ContentTypes;
 using Zara.Web.CatalogModels.Product;
+using Zara.Web.Helpers;
 using Zara.Web.Views.BaseClasses;
 
 namespace Zara.Web.Views.CommerceTemplates.ProductListing.Units
@@ -9,6 +10,8 @@ namespace Zara.Web.Views.CommerceTemplates.ProductListing.Units
 	{
 		public ZaraProductContent ZaraProductContent { get; set; }
 
+		protected decimal Price { get; set; }
+
 		protected override void OnLoad(EventArgs e)
 		{
 			if (ZaraProductContent == null)
@@ -16,6 +19,7 @@ namespace Zara.Web.Views.CommerceTemplates.ProductListing.Units
 				Visible = false;
 				return;
 			}
+			Price = EntryHelper.LoadEntryPrice(ZaraProductContent.Code);
 		}
 	}
 }

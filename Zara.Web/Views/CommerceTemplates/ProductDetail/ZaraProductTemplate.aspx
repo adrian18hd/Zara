@@ -11,6 +11,9 @@
 		<EPiServer:Property runat="server" PropertyName="MainContent"></EPiServer:Property>
 	</div>
 	<div class="col-lg-4">
+		<p><strong>Ref #: </strong><EPiServer:Property runat="server" PropertyName="RefNumber"></EPiServer:Property></p>
+		<p><strong>Model Height: </strong><EPiServer:Property runat="server" PropertyName="Height"></EPiServer:Property></p>
+		<hr/>
 		<zara:VariantsSelector ID="variantsSelector" runat="server" />
 	</div>
 </asp:Content>

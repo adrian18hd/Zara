@@ -16,10 +16,12 @@
 		<nav class="header">
 			<ul class="nav nav-pills pull-right">
 				<li class="active"><a href="/">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
 			</ul>
-			<h3 class="text-muted">Zara Commerce Site</h3>
+			<h3 class="text-muted">
+				<a href="/">
+				<img src="http://static.zara.net/wcsstore/ZaraStorefrontAssetStore/images/logo_Zara.png" alt="Zara Commerce Site" />
+					</a>
+			</h3>
 		</nav>
 		<asp:ContentPlaceHolder ID="MainContent" runat="server">
 		</asp:ContentPlaceHolder>

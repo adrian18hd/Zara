@@ -5,8 +5,11 @@
 
 <asp:Content ContentPlaceHolderID="MainContent" ID="MainContent" runat="server">
 	<h1><%=CurrentContent.DisplayName %></h1>
+	<div class="col-lg-3">
+		<zara:SubCategories ID="subCategories" runat="server" />
+	</div>
 
-	<zara:SubCategories ID="subCategories" runat="server" />
-
-	<zara:EntriesList ID="entries" runat="server" />
+	<div class="col-lg-9">
+		<zara:EntriesList ID="entries" runat="server" />
+	</div>
 </asp:Content>
