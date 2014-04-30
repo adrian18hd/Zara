@@ -25,5 +25,7 @@ namespace Zara.Web.CatalogModels.Product
 		[Display(Name = "Size")]
 		[CultureSpecific]
 		public virtual string Size { get; set; }
+
+		public virtual string NewField { get; set; }
 	}
 }

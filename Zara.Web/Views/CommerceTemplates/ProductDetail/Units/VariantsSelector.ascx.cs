@@ -50,6 +50,10 @@ namespace Zara.Web.Views.CommerceTemplates.ProductDetail.Units
 			}
 
 			BindColorsAndSizes();
+
+			//Get all relations for the current product
+			//IEnumerable<Association> associations = LinksRepository.GetAssociations(CurrentData.ContentLink).Where(a=>a.Group.Name == "YouMightAlsoLike");
+			//var emtry = ContentLoader.Get<EntryContentBase>(associations.First().Target);
 		}
 
 		private void BindColorsAndSizes()

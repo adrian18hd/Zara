@@ -1,6 +1,7 @@
 ﻿using System;
 using EPiServer;
 using EPiServer.Commerce.Catalog.ContentTypes;
+using EPiServer.Commerce.Catalog.Linking;
 using EPiServer.Commerce.SpecializedProperties;
 using EPiServer.ServiceLocation;
 using EPiServer.Web;
@@ -19,6 +20,7 @@ namespace Zara.Web.Views.BaseClasses
 		private UrlResolver _urlResolver;
 		private IContentLoader _contentLoader;
 		private ICatalogSystem _catalogSystem;
+		private ILinksRepository _linksRepository;
 
 		protected IPermanentLinkMapper PermanentLinkMapper
 		{
@@ -41,6 +43,11 @@ namespace Zara.Web.Views.BaseClasses
 		protected ICatalogSystem CatalogSystem
 		{
 			get { return _catalogSystem ?? (_catalogSystem = ServiceLocator.Current.GetInstance<ICatalogSystem>()); }
+		}
+
+		protected ILinksRepository LinksRepository
+		{
+			get { return _linksRepository ?? (_linksRepository = ServiceLocator.Current.GetInstance<ILinksRepository>()); }
 		}
 
 		protected string GetUrl(CatalogContentBase content)
