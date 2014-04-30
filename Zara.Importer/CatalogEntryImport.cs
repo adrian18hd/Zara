@@ -65,6 +65,9 @@ namespace Zara.Importer
 			//save entry
 			_catalogSystem.SaveCatalogEntry(entryDto);
 
+			_metaDataContext.UseCurrentThreadCulture = false;
+			_metaDataContext.Language = "en";
+
 			//set meta data properties
 			MetaObject metaObject = new MetaObject(metaClass, productRow.CatalogEntryId);
 			//DisplayName meta field is associated automatically by EPiServer to every catalog meta class
@@ -72,6 +75,14 @@ namespace Zara.Importer
 			MetaHelper.SetMetaFieldValue(_metaDataContext, metaObject, "RefNumber", new object[] {refNumber});
 			MetaHelper.SetMetaFieldValue(_metaDataContext, metaObject, "Height", new object[] {height});
 			metaObject.AcceptChanges(_metaDataContext);
+
+			_metaDataContext.Language = "sv";
+			MetaHelper.SetMetaFieldValue(_metaDataContext, metaObject, "DisplayName", new object[] { name });
+			MetaHelper.SetMetaFieldValue(_metaDataContext, metaObject, "RefNumber", new object[] { refNumber });
+			MetaHelper.SetMetaFieldValue(_metaDataContext, metaObject, "Height", new object[] { height });
+			metaObject.AcceptChanges(_metaDataContext);
+
+			_metaDataContext.UseCurrentThreadCulture = true;
 
 			//add the entry to the category
 			AddEntryToCategory(productRow);
@@ -104,6 +115,8 @@ namespace Zara.Importer
 
 					#region set meta data properties
 
+					_metaDataContext.UseCurrentThreadCulture = false;
+					_metaDataContext.Language = "en";
 					MetaObject metaObject = new MetaObject(metaClass, variantRow.CatalogEntryId);
 					//DisplayName meta field is associated automatically by EPiServer to every catalog meta class
 					MetaHelper.SetMetaFieldValue(_metaDataContext, metaObject, "DisplayName", new object[] {name});
@@ -111,6 +124,12 @@ namespace Zara.Importer
 					MetaHelper.SetMetaFieldValue(_metaDataContext, metaObject, "Size", new object[] {size});
 					metaObject.AcceptChanges(_metaDataContext);
 
+					_metaDataContext.Language = "sv";
+					MetaHelper.SetMetaFieldValue(_metaDataContext, metaObject, "DisplayName", new object[] { name });
+					MetaHelper.SetMetaFieldValue(_metaDataContext, metaObject, "Color", new object[] { color });
+					MetaHelper.SetMetaFieldValue(_metaDataContext, metaObject, "Size", new object[] { size });
+					metaObject.AcceptChanges(_metaDataContext);
+					_metaDataContext.UseCurrentThreadCulture = true;
 					#endregion
 
 					#region add the variant entry to the category
