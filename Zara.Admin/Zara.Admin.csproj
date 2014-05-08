@@ -1866,7 +1866,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51795</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://adrian-pc:18001/</IISUrl>
+          <IISUrl>http://localhost:18002/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
