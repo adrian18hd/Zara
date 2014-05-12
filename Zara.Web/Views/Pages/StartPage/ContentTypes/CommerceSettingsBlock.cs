@@ -18,6 +18,6 @@ namespace Zara.Web.Views.Pages.StartPage.ContentTypes
 		)]
 	public class CommerceSettingsBlock : BlockData
 	{
-
+		public virtual PageReference ShoppingCartPage { get; set; }
 	}
 }

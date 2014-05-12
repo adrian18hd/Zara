@@ -55,6 +55,7 @@
     <Folder Include="gui\img\" />
     <Folder Include="lang\" />
     <Folder Include="modules\" />
+    <Folder Include="Views\Pages\Checkout\ContentTypes\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -84,6 +85,7 @@
     <Content Include="Views\CommerceTemplates\ProductListing\Units\SimpleProduct.ascx" />
     <Content Include="Views\CommerceTemplates\ProductListing\Units\SubCategoriesList.ascx" />
     <Content Include="Views\CommerceTemplates\ProductListing\ZaraCatalogNodeTemplate.aspx" />
+    <Content Include="Views\Pages\ShoppingCart\ShoppingCart.aspx" />
     <Content Include="Views\Pages\StartPage\CatalogNodes.ascx" />
     <Content Include="Views\Pages\StartPage\StartPage.aspx" />
     <Content Include="web.config">
@@ -611,6 +613,14 @@
     </Compile>
     <Compile Include="Views\MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\ShoppingCart\ContentTypes\ShoppingCartPage.cs" />
+    <Compile Include="Views\Pages\ShoppingCart\ShoppingCart.aspx.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Pages\ShoppingCart\ShoppingCart.aspx.designer.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\StartPage\CatalogNodes.ascx.cs">
       <DependentUpon>CatalogNodes.ascx</DependentUpon>
