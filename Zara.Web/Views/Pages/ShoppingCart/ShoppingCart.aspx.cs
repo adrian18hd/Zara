@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web.UI;
 using Mediachase.Commerce.Orders;
 using Mediachase.Commerce.Website.Helpers;
 using Zara.Web.Views.BaseClasses;
@@ -8,16 +9,11 @@ namespace Zara.Web.Views.Pages.ShoppingCart
 {
 	public partial class ShoppingCart : TemplatePageBase<ShoppingCartPage>
 	{
-		private readonly CartHelper _cartHelper = new CartHelper(Cart.DefaultName);
-
-		protected bool CartIsEmpty
+		protected override void Render(HtmlTextWriter writer)
 		{
-			get { return _cartHelper.IsEmpty; }
-		}
-
-		protected override void OnLoad(EventArgs e)
-		{
-			lblEmptyShoppingCartMessage.Visible = CartIsEmpty;
+			CartHelper cartHelper = new CartHelper(Cart.DefaultName);
+			lblEmptyShoppingCartMessage.Visible = cartHelper.IsEmpty;
+			base.Render(writer);
 		}
 	}
 }

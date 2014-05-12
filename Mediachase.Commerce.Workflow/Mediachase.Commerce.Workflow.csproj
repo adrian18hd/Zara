@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{413287F6-D606-4F42-BA25-4377A2C581F9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Mediachase.Commerce.Workflow</RootNamespace>
+    <AssemblyName>Mediachase.Commerce.Workflow</AssemblyName>
+    <ProjectTypeGuids>{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <NoWarn>1591</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Release\Mediachase.Commerce.Workflow.XML</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\Components\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.BusinessFoundation.Data">
+      <HintPath>..\..\Components\Mediachase.BusinessFoundation.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Commerce">
+      <HintPath>..\..\Components\Mediachase.Commerce.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.MetaDataPlus">
+      <HintPath>..\..\Components\Mediachase.MetaDataPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Workflow.Runtime" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\POCalculateTotalsWorkflow.xoml.cs">
+      <DependentUpon>POCalculateTotalsWorkflow.xoml</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Admin\POCompleteShipmentWorkflow.xoml.cs">
+      <DependentUpon>POCompleteShipmentWorkflow.xoml</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Admin\POSplitShipmentsWorkflow.xoml.cs">
+      <DependentUpon>POSplitShipmentsWorkflow.xoml</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Admin\POSaveChangesWorkflow.xoml.cs">
+      <DependentUpon>POSaveChangesWorkflow.xoml</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CartCheckoutWorkflow.xoml.cs">
+      <DependentUpon>CartCheckoutWorkflow.xoml</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CartPrepareWorkflow.xoml.cs">
+      <DependentUpon>CartPrepareWorkflow.xoml</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CartValidateWorkflow.xoml.cs">
+      <DependentUpon>CartValidateWorkflow.xoml</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CheckAndReserveInstorePickupWorkflow.xoml.cs">
+      <DependentUpon>CheckAndReserveInstorePickupWorkflow.xoml</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderRecalculateWorkflow.xoml.cs">
+      <DependentUpon>PurchaseOrderRecalculateWorkflow.xoml</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReturnFormCompleteWorkflow.xoml.cs">
+      <DependentUpon>ReturnFormCompleteWorkflow.xoml</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReturnFormRecalculateWorkflow.xoml.cs">
+      <DependentUpon>ReturnFormRecalculateWorkflow.xoml</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\POCalculateTotalsWorkflow.xoml" />
+    <Content Include="Admin\POCompleteShipmentWorkflow.xoml" />
+    <Content Include="Admin\POSaveChangesWorkflow.xoml" />
+    <Content Include="Admin\POSplitShipmentsWorkflow.xoml" />
+    <Content Include="CartCheckoutWorkflow.xoml" />
+    <Content Include="CartPrepareWorkflow.xoml" />
+    <Content Include="CartValidateWorkflow.xoml" />
+    <Content Include="CheckAndReserveInstorePickupWorkflow.xoml" />
+    <Content Include="PurchaseOrderRecalculateWorkflow.xoml" />
+    <Content Include="ReturnFormCompleteWorkflow.xoml" />
+    <Content Include="ReturnFormRecalculateWorkflow.xoml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mediachase.Commerce.Workflow.Activities\Mediachase.Commerce.Workflow.Activities.csproj">
+      <Project>{b7957825-3e86-4ea6-8cf3-9bdf7dc8c7a6}</Project>
+      <Name>Mediachase.Commerce.Workflow.Activities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <Import Project="$(MSBuildToolsPath)\Workflow.Targets" />
+  <Target Name="AfterBuild">
+    <CallTarget Targets="CreateWorkflowsPackage" Condition="'$(IsDesktopBuild)'!='true' And '$(IsDesktopBuild)' != ''" />
+  </Target>
+</Project>

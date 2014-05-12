@@ -4,10 +4,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zara.Web", "Zara.Web\Zara.Web.csproj", "{1502E55F-A6D6-490F-8AE9-2E83F768BE44}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B7957825-3E86-4EA6-8CF3-9BDF7DC8C7A6} = {B7957825-3E86-4EA6-8CF3-9BDF7DC8C7A6}
+		{413287F6-D606-4F42-BA25-4377A2C581F9} = {413287F6-D606-4F42-BA25-4377A2C581F9}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zara.Admin", "Zara.Admin\Zara.Admin.csproj", "{7C5C6F26-AAE6-49B4-8C99-285A13F03F3D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zara.Importer", "Zara.Importer\Zara.Importer.csproj", "{48C02861-ECAC-4586-911F-C542FD38E2BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Commerce.Workflow", "Mediachase.Commerce.Workflow\Mediachase.Commerce.Workflow.csproj", "{413287F6-D606-4F42-BA25-4377A2C581F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Commerce.Workflow.Activities", "Mediachase.Commerce.Workflow.Activities\Mediachase.Commerce.Workflow.Activities.csproj", "{B7957825-3E86-4EA6-8CF3-9BDF7DC8C7A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +35,14 @@ Global
 		{48C02861-ECAC-4586-911F-C542FD38E2BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48C02861-ECAC-4586-911F-C542FD38E2BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48C02861-ECAC-4586-911F-C542FD38E2BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{413287F6-D606-4F42-BA25-4377A2C581F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{413287F6-D606-4F42-BA25-4377A2C581F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{413287F6-D606-4F42-BA25-4377A2C581F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{413287F6-D606-4F42-BA25-4377A2C581F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7957825-3E86-4EA6-8CF3-9BDF7DC8C7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7957825-3E86-4EA6-8CF3-9BDF7DC8C7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7957825-3E86-4EA6-8CF3-9BDF7DC8C7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7957825-3E86-4EA6-8CF3-9BDF7DC8C7A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

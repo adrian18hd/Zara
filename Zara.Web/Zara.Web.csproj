@@ -86,6 +86,8 @@
     <Content Include="Views\CommerceTemplates\ProductListing\Units\SubCategoriesList.ascx" />
     <Content Include="Views\CommerceTemplates\ProductListing\ZaraCatalogNodeTemplate.aspx" />
     <Content Include="Views\Pages\ShoppingCart\ShoppingCart.aspx" />
+    <Content Include="Views\Pages\ShoppingCart\Units\CartItems.ascx" />
+    <Content Include="Views\Pages\ShoppingCart\Units\CartSummary.ascx" />
     <Content Include="Views\Pages\StartPage\CatalogNodes.ascx" />
     <Content Include="Views\Pages\StartPage\StartPage.aspx" />
     <Content Include="web.config">
@@ -397,14 +399,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\Mediachase.Commerce.Website.dll</HintPath>
     </Reference>
-    <Reference Include="Mediachase.Commerce.Workflow, Version=7.5.394.2, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Components\Mediachase.Commerce.Workflow.dll</HintPath>
-    </Reference>
-    <Reference Include="Mediachase.Commerce.Workflow.Activities, Version=7.5.394.2, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Components\Mediachase.Commerce.Workflow.Activities.dll</HintPath>
-    </Reference>
     <Reference Include="Mediachase.DataProvider, Version=7.5.394.2, Culture=neutral, PublicKeyToken=41d2e7a615ba286c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\Mediachase.DataProvider.dll</HintPath>
@@ -622,6 +616,20 @@
     <Compile Include="Views\Pages\ShoppingCart\ShoppingCart.aspx.designer.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Pages\ShoppingCart\Units\CartItems.ascx.cs">
+      <DependentUpon>CartItems.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Pages\ShoppingCart\Units\CartItems.ascx.designer.cs">
+      <DependentUpon>CartItems.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\ShoppingCart\Units\CartSummary.ascx.cs">
+      <DependentUpon>CartSummary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Pages\ShoppingCart\Units\CartSummary.ascx.designer.cs">
+      <DependentUpon>CartSummary.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Pages\StartPage\CatalogNodes.ascx.cs">
       <DependentUpon>CatalogNodes.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -648,6 +656,14 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Mediachase.Commerce.Workflow.Activities\Mediachase.Commerce.Workflow.Activities.csproj">
+      <Project>{b7957825-3e86-4ea6-8cf3-9bdf7dc8c7a6}</Project>
+      <Name>Mediachase.Commerce.Workflow.Activities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mediachase.Commerce.Workflow\Mediachase.Commerce.Workflow.csproj">
+      <Project>{413287f6-d606-4f42-ba25-4377a2c581f9}</Project>
+      <Name>Mediachase.Commerce.Workflow</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Zara.Importer\Zara.Importer.csproj">
       <Project>{48c02861-ecac-4586-911f-c542fd38e2bf}</Project>
       <Name>Zara.Importer</Name>

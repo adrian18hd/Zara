@@ -167,7 +167,7 @@ namespace Zara.Importer
 						CatalogKey = variantCatalogKey,
 						CustomerPricing = new CustomerPricing(CustomerPricing.PriceType.AllCustomers, String.Empty),
 						MarketId = MarketId.Default,
-						MinQuantity = 1,
+						MinQuantity = 0,
 						UnitPrice = new Money(price, Currency.USD),
 						ValidFrom = DateTime.UtcNow,
 						ValidUntil = DateTime.UtcNow.AddYears(20)

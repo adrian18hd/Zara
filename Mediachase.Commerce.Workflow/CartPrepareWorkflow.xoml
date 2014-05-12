@@ -1,0 +1,21 @@
+﻿<SequentialWorkflowActivity x:Class="Mediachase.Commerce.Workflow.CartPrepareWorkflow" x:Name="CartPrepareWorkflow" xmlns:ns0="clr-namespace:Mediachase.Commerce.Workflow.Activities;Assembly=Mediachase.Commerce.Workflow.Activities, Culture=neutral, PublicKeyToken=null" xmlns:ns1="clr-namespace:Mediachase.Commerce.Workflow.Activities.PurchaseOrderActivities;Assembly=Mediachase.Commerce.Workflow.Activities, Culture=neutral, PublicKeyToken=null" xmlns:ns2="clr-namespace:Mediachase.Commerce.Workflow.Activities.Cart;Assembly=Mediachase.Commerce.Workflow.Activities, Culture=neutral, PublicKeyToken=null" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+	<ns0:ValidateLineItemsActivity x:Name="validateLineItemsActivity1" OrderGroup="{ActivityBind CartPrepareWorkflow,Path=OrderGroup}" Warnings="{ActivityBind CartPrepareWorkflow,Path=Warnings}" />
+  <ns2:GetFulfillmentWarehouseActivity x:Name="getFulfillmentWarehouseActivity1" PickupWarehouseInShipment="{ActivityBind CartPrepareWorkflow,Path=PickupWarehouseInShipment}" Warnings="{ActivityBind CartPrepareWorkflow,Path=Warnings}" OrderGroup="{ActivityBind CartPrepareWorkflow,Path=OrderGroup}" />
+  <IfElseActivity x:Name="ifElseActivity1">
+		<IfElseBranchActivity x:Name="ifElseBranchActivity1">
+			<IfElseBranchActivity.Condition>
+				<CodeCondition Condition="CheckInstoreInventory" />
+			</IfElseBranchActivity.Condition>
+			<ns1:CheckInstoreInventoryActivity PickupWarehouseInShipment="{ActivityBind CartPrepareWorkflow,Path=PickupWarehouseInShipment}" Warnings="{ActivityBind CartPrepareWorkflow,Path=Warnings}" Description="Checks Inventory for in-store pickup and reserves items accordingly." OrderGroup="{ActivityBind CartPrepareWorkflow,Path=OrderGroup}" x:Name="checkInstoreInventoryActivity1" />
+		</IfElseBranchActivity>
+		<IfElseBranchActivity x:Name="ifElseBranchActivity2">
+			<ns0:CheckInventoryActivity Description="Checks Inventory and removes items if needed." x:Name="checkInventoryActivity2" OrderGroup="{ActivityBind CartPrepareWorkflow,Path=OrderGroup}" Warnings="{ActivityBind CartPrepareWorkflow,Path=Warnings}" />
+		</IfElseBranchActivity>
+	</IfElseActivity>
+	<ns0:ProcessShipmentsActivity Warnings="{ActivityBind CartPrepareWorkflow,Path=Warnings}" OrderGroup="{ActivityBind CartPrepareWorkflow,Path=OrderGroup}" x:Name="processShipmentsActivity1" />
+	<ns0:CalculateTotalsActivity x:Name="calculateTotalsActivity1" OrderGroup="{ActivityBind CartPrepareWorkflow,Path=OrderGroup}" Warnings="{ActivityBind CartPrepareWorkflow,Path=Warnings}" />
+	<ns0:RemoveDiscountsActivity x:Name="removeDiscountsActivity1" OrderGroup="{ActivityBind CartPrepareWorkflow,Path=OrderGroup}" Warnings="{ActivityBind CartPrepareWorkflow,Path=Warnings}" />
+	<ns0:CalculateDiscountsActivity x:Name="calculateDiscountsActivity1" OrderGroup="{ActivityBind CartPrepareWorkflow,Path=OrderGroup}" Warnings="{ActivityBind CartPrepareWorkflow,Path=Warnings}" />
+	<ns0:CalculateTaxActivity x:Name="calculateTaxActivity1" OrderGroup="{ActivityBind CartPrepareWorkflow,Path=OrderGroup}" Warnings="{ActivityBind CartPrepareWorkflow,Path=Warnings}" />
+	<ns0:CalculateTotalsActivity x:Name="calculateTotalsActivity2" OrderGroup="{ActivityBind CartPrepareWorkflow,Path=OrderGroup}" Warnings="{ActivityBind CartPrepareWorkflow,Path=Warnings}" />
+</SequentialWorkflowActivity>

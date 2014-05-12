@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B7957825-3E86-4EA6-8CF3-9BDF7DC8C7A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Mediachase.Commerce.Workflow.Activities</RootNamespace>
+    <AssemblyName>Mediachase.Commerce.Workflow.Activities</AssemblyName>
+    <ProjectTypeGuids>{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <NoWarn>1591</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Release\Mediachase.Commerce.Workflow.Activities.XML</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\Components\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Framework, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\EPiServer.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.BusinessFoundation.Data">
+      <HintPath>..\..\Components\Mediachase.BusinessFoundation.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Commerce">
+      <HintPath>..\..\Components\Mediachase.Commerce.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Commerce.Website">
+      <HintPath>..\..\Components\Mediachase.Commerce.Website.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.DataProvider">
+      <HintPath>..\..\Components\Mediachase.DataProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.MetaDataPlus">
+      <HintPath>..\..\Components\Mediachase.MetaDataPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Workflow.Runtime" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CartActivities\CartActivityBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CartActivities\CartActivityBase.Designer.cs">
+      <DependentUpon>CartActivityBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderActivities\AdjustInstoreInventoryActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderActivities\AdjustInstoreInventoryActivity.Designer.cs">
+      <DependentUpon>AdjustInstoreInventoryActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CartActivities\GetFulfillmentWarehouseActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CartActivities\GetFulfillmentWarehouseActivity.Designer.cs">
+      <DependentUpon>GetFulfillmentWarehouseActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderGroupActivities\CalculateDiscountsActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrderGroupActivities\CalculateDiscountsActivity.Designer.cs">
+      <DependentUpon>CalculateDiscountsActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderGroupActivities\CalculateTaxActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrderGroupActivities\CalculateTaxActivity.Designer.cs">
+      <DependentUpon>CalculateTaxActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderGroupActivities\CalculateTotalsActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrderGroupActivities\CalculateTotalsActivity.Designer.cs">
+      <DependentUpon>CalculateTotalsActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderGroupActivities\CheckInventoryActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrderGroupActivities\CheckInventoryActivity.Designer.cs">
+      <DependentUpon>CheckInventoryActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CartActivities\AdjustInventoryActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CartActivities\AdjustInventoryActivity.Designer.cs">
+      <DependentUpon>AdjustInventoryActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderGroupActivities\CapturePaymentActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrderGroupActivities\CapturePaymentActivity.Designer.cs">
+      <DependentUpon>CapturePaymentActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderActivities\CheckInstoreInventoryActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderActivities\CheckInstoreInventoryActivity.Designer.cs">
+      <DependentUpon>CheckInstoreInventoryActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderGroupActivities\ProcessShipmentsActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrderGroupActivities\ProcessShipmentsActivity.Designer.cs">
+      <DependentUpon>ProcessShipmentsActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CartActivities\RecordPromotionUsageActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CartActivities\RecordPromotionUsageActivity.Designer.cs">
+      <DependentUpon>RecordPromotionUsageActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderGroupActivities\RemoveDiscountsActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrderGroupActivities\RemoveDiscountsActivity.Designer.cs">
+      <DependentUpon>RemoveDiscountsActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderGroupActivities\ValidateLineItemsActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrderGroupActivities\ValidateLineItemsActivity.Designer.cs">
+      <DependentUpon>ValidateLineItemsActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CartActivities\ProcessHandlingActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CartActivities\ProcessHandlingActivity.Designer.cs">
+      <DependentUpon>ProcessHandlingActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CartActivities\ProcessPaymentActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CartActivities\ProcessPaymentActivity.Designer.cs">
+      <DependentUpon>ProcessPaymentActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderGroupActivities\OrderGroupActivityBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrderGroupActivities\OrderGroupActivityBase.Designer.cs">
+      <DependentUpon>OrderGroupActivityBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="CartActivities\ShipmentSplitActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CartActivities\ShipmentSplitActivity.Designer.cs">
+      <DependentUpon>ShipmentSplitActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderActivities\CalculatePurchaseOrderStatusActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderActivities\CalculatePurchaseOrderStatusActivity.Designer.cs">
+      <DependentUpon>CalculatePurchaseOrderStatusActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderActivities\HandoffActivityBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderActivities\HandoffActivityBase.Designer.cs">
+      <DependentUpon>HandoffActivityBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderActivities\PurchaseOrderBaseActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderActivities\PurchaseOrderBaseActivity.Designer.cs">
+      <DependentUpon>PurchaseOrderBaseActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnFormActivities\CalculateExchangeOrderStatusActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReturnFormActivities\CalculateExchangeOrderStatusActivity.Designer.cs">
+      <DependentUpon>CalculateExchangeOrderStatusActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnFormActivities\CalculateReturnFormStatusActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReturnFormActivities\CalculateReturnFormStatusActivity.Designer.cs">
+      <DependentUpon>CalculateReturnFormStatusActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnFormActivities\CalculateReturnFormTaxActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReturnFormActivities\CalculateReturnFormTaxActivity.Designer.cs">
+      <DependentUpon>CalculateReturnFormTaxActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnFormActivities\CalculateReturnFormTotalsActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReturnFormActivities\CalculateReturnFormTotalsActivity.Designer.cs">
+      <DependentUpon>CalculateReturnFormTotalsActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnFormActivities\CreateExchangePaymentActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReturnFormActivities\CreateExchangePaymentActivity.Designer.cs">
+      <DependentUpon>CreateExchangePaymentActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnFormActivities\ReturnFormBaseActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReturnFormActivities\ReturnFormBaseActivity.Designer.cs">
+      <DependentUpon>ReturnFormBaseActivity.cs</DependentUpon>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <Import Project="$(MSBuildToolsPath)\Workflow.Targets" />
+  <Target Name="AfterBuild">
+    <CallTarget Targets="CreateActivitiesPackage" Condition="'$(IsDesktopBuild)'!='true' And '$(IsDesktopBuild)' != ''" />
+  </Target>
+</Project>

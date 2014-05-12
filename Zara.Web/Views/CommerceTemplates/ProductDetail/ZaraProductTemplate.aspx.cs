@@ -1,6 +1,4 @@
-﻿using System;
-using System.Linq;
-using EPiServer.Framework.DataAnnotations;
+﻿using EPiServer.Framework.DataAnnotations;
 using Zara.Web.CatalogModels.Product;
 using Zara.Web.Views.BaseClasses;
 

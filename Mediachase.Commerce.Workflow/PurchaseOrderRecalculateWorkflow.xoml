@@ -1,0 +1,23 @@
+﻿<SequentialWorkflowActivity x:Class="Mediachase.Commerce.Workflow.PurchaseOrderRecalculateWorkflow" x:Name="PurchaseOrderRecalculateWorkflow" xmlns:ns0="clr-namespace:Mediachase.Commerce.Workflow.Activities;Assembly=Mediachase.Commerce.Workflow.Activities, Culture=neutral, PublicKeyToken=null" xmlns:ns1="clr-namespace:Mediachase.Commerce.Workflow.Activities.PurchaseOrderActivities;Assembly=Mediachase.Commerce.Workflow.Activities, Culture=neutral, PublicKeyToken=null" xmlns:ns2="clr-namespace:Mediachase.Commerce.Workflow.Activities.Cart;Assembly=Mediachase.Commerce.Workflow.Activities, Culture=neutral, PublicKeyToken=null" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+	<ns0:ValidateLineItemsActivity x:Name="validateLineItemsActivity1" OrderGroup="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=OrderGroup}" Warnings="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=Warnings}" />
+  <ns2:GetFulfillmentWarehouseActivity x:Name="getFulfillmentWarehouseActivity1" PickupWarehouseInShipment="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=PickupWarehouseInShipment}" Warnings="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=Warnings}" OrderGroup="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=OrderGroup}" />
+  <!--<ns2:ShipmentSplitActivity x:Name="shipmentSplitActivity1" Warnings="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=Warnings}" OrderGroup="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=OrderGroup}" />-->
+	<IfElseActivity x:Name="ifElseActivity1">
+		<IfElseBranchActivity x:Name="ifElseBranchActivity1">
+			<IfElseBranchActivity.Condition>
+				<CodeCondition Condition="CheckInstoreInventory" />
+			</IfElseBranchActivity.Condition>
+			<ns1:CheckInstoreInventoryActivity PickupWarehouseInShipment="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=PickupWarehouseInShipment}" Warnings="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=Warnings}" OrderGroup="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=OrderGroup}" Description="Checks Inventory for in-store pickup and reserves items accordingly." x:Name="checkInstoreInventoryActivity1" />
+		</IfElseBranchActivity>
+		<IfElseBranchActivity x:Name="ifElseBranchActivity2">
+			<ns0:CheckInventoryActivity Description="Checks Inventory and removes items if needed." x:Name="checkInventoryActivity1" OrderGroup="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=OrderGroup}" Warnings="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=Warnings}" />
+		</IfElseBranchActivity>
+	</IfElseActivity>
+	<ns0:ProcessShipmentsActivity Warnings="{x:Null}" OrderGroup="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=OrderGroup}" x:Name="processShipmentsActivity1" />
+	<ns0:RemoveDiscountsActivity x:Name="removeDiscountsActivity1" OrderGroup="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=OrderGroup}" Warnings="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=Warnings}" />
+	<ns0:CalculateTotalsActivity x:Name="calculateTotalsActivity1" OrderGroup="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=OrderGroup}" Warnings="{x:Null}" />
+	<ns0:CalculateDiscountsActivity x:Name="calculateDiscountsActivity1" OrderGroup="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=OrderGroup}" Warnings="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=Warnings}" />
+	<ns0:CalculateTaxActivity x:Name="calculateTaxActivity1" OrderGroup="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=OrderGroup}" Warnings="{x:Null}" />
+	<ns0:CalculateTotalsActivity x:Name="calculateTotalsActivity2" OrderGroup="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=OrderGroup}" Warnings="{x:Null}" />
+	<ns1:CalculatePurchaseOrderStatusActivity Warnings="{x:Null}" OrderGroup="{ActivityBind PurchaseOrderRecalculateWorkflow,Path=OrderGroup}" x:Name="calculatePurchaseOrderStatusActivity1" />
+</SequentialWorkflowActivity>

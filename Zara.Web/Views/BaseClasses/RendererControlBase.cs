@@ -21,6 +21,7 @@ namespace Zara.Web.Views.BaseClasses
 		private IContentLoader _contentLoader;
 		private ICatalogSystem _catalogSystem;
 		private ILinksRepository _linksRepository;
+		private ReferenceConverter _referenceConverter;
 
 		protected IPermanentLinkMapper PermanentLinkMapper
 		{
@@ -48,6 +49,14 @@ namespace Zara.Web.Views.BaseClasses
 		protected ILinksRepository LinksRepository
 		{
 			get { return _linksRepository ?? (_linksRepository = ServiceLocator.Current.GetInstance<ILinksRepository>()); }
+		}
+
+		protected ReferenceConverter ReferenceConverter
+		{
+			get
+			{
+				return _referenceConverter ?? (_referenceConverter = ServiceLocator.Current.GetInstance<ReferenceConverter>());
+			}
 		}
 
 		protected string GetUrl(CatalogContentBase content)
