@@ -126,17 +126,39 @@
     <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Admin\POCalculateTotalsWorkflow.xoml" />
-    <Content Include="Admin\POCompleteShipmentWorkflow.xoml" />
-    <Content Include="Admin\POSaveChangesWorkflow.xoml" />
-    <Content Include="Admin\POSplitShipmentsWorkflow.xoml" />
-    <Content Include="CartCheckoutWorkflow.xoml" />
-    <Content Include="CartPrepareWorkflow.xoml" />
-    <Content Include="CartValidateWorkflow.xoml" />
-    <Content Include="CheckAndReserveInstorePickupWorkflow.xoml" />
-    <Content Include="PurchaseOrderRecalculateWorkflow.xoml" />
-    <Content Include="ReturnFormCompleteWorkflow.xoml" />
-    <Content Include="ReturnFormRecalculateWorkflow.xoml" />
+    <Content Include="Admin\POCalculateTotalsWorkflow.xoml">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Admin\POCompleteShipmentWorkflow.xoml">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Admin\POSaveChangesWorkflow.xoml">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Admin\POSplitShipmentsWorkflow.xoml">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="CartCheckoutWorkflow.xoml">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="CartPrepareWorkflow.xoml">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="CartValidateWorkflow.xoml">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="CheckAndReserveInstorePickupWorkflow.xoml">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="PurchaseOrderRecalculateWorkflow.xoml">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="ReturnFormCompleteWorkflow.xoml">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="ReturnFormRecalculateWorkflow.xoml">
+      <SubType>Component</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mediachase.Commerce.Workflow.Activities\Mediachase.Commerce.Workflow.Activities.csproj">

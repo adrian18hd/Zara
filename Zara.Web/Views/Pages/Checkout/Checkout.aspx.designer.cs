@@ -7,36 +7,36 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Zara.Web.Views.Pages.ShoppingCart {
+namespace Zara.Web.Views.Pages.Checkout {
     
     
-    public partial class ShoppingCart {
+    public partial class Checkout {
         
         /// <summary>
-        /// lblEmptyShoppingCartMessage control.
+        /// paymentMethod control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEmptyShoppingCartMessage;
+        protected global::Zara.Web.Views.Pages.Checkout.Units.PaymentMethod paymentMethod;
         
         /// <summary>
-        /// cartItems control.
+        /// shippingMethod control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Zara.Web.Views.Pages.ShoppingCart.Units.CartItems cartItems;
+        protected global::Zara.Web.Views.Pages.Checkout.Units.ShippingMethod shippingMethod;
         
         /// <summary>
-        /// navCheckout control.
+        /// pnlPlaceOrder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder navCheckout;
+        protected global::System.Web.UI.WebControls.Panel pnlPlaceOrder;
     }
 }

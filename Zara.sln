@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Commerce.Workflo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Commerce.Workflow.Activities", "Mediachase.Commerce.Workflow.Activities\Mediachase.Commerce.Workflow.Activities.csproj", "{B7957825-3E86-4EA6-8CF3-9BDF7DC8C7A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPaymentMethod", "TestPaymentMethod\TestPaymentMethod.csproj", "{739BAF50-6268-4E34-A31A-8E6B72CF4EA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestShippingMethod", "TestShippingMethod\TestShippingMethod.csproj", "{1D069302-1C3E-4219-A2F5-7DD91BC0EF6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,14 @@ Global
 		{B7957825-3E86-4EA6-8CF3-9BDF7DC8C7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7957825-3E86-4EA6-8CF3-9BDF7DC8C7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7957825-3E86-4EA6-8CF3-9BDF7DC8C7A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{739BAF50-6268-4E34-A31A-8E6B72CF4EA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{739BAF50-6268-4E34-A31A-8E6B72CF4EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{739BAF50-6268-4E34-A31A-8E6B72CF4EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{739BAF50-6268-4E34-A31A-8E6B72CF4EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D069302-1C3E-4219-A2F5-7DD91BC0EF6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D069302-1C3E-4219-A2F5-7DD91BC0EF6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D069302-1C3E-4219-A2F5-7DD91BC0EF6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D069302-1C3E-4219-A2F5-7DD91BC0EF6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

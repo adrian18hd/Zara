@@ -55,7 +55,6 @@
     <Folder Include="gui\img\" />
     <Folder Include="lang\" />
     <Folder Include="modules\" />
-    <Folder Include="Views\Pages\Checkout\ContentTypes\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -85,6 +84,9 @@
     <Content Include="Views\CommerceTemplates\ProductListing\Units\SimpleProduct.ascx" />
     <Content Include="Views\CommerceTemplates\ProductListing\Units\SubCategoriesList.ascx" />
     <Content Include="Views\CommerceTemplates\ProductListing\ZaraCatalogNodeTemplate.aspx" />
+    <Content Include="Views\Pages\Checkout\Checkout.aspx" />
+    <Content Include="Views\Pages\Checkout\Units\PaymentMethod.ascx" />
+    <Content Include="Views\Pages\Checkout\Units\ShippingMethod.ascx" />
     <Content Include="Views\Pages\ShoppingCart\ShoppingCart.aspx" />
     <Content Include="Views\Pages\ShoppingCart\Units\CartItems.ascx" />
     <Content Include="Views\Pages\ShoppingCart\Units\CartSummary.ascx" />
@@ -608,6 +610,28 @@
     <Compile Include="Views\MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="Views\Pages\Checkout\Checkout.aspx.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Pages\Checkout\Checkout.aspx.designer.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\Checkout\ContentTypes\CheckoutPage.cs" />
+    <Compile Include="Views\Pages\Checkout\Units\PaymentMethod.ascx.cs">
+      <DependentUpon>PaymentMethod.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Pages\Checkout\Units\PaymentMethod.ascx.designer.cs">
+      <DependentUpon>PaymentMethod.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\Checkout\Units\ShippingMethod.ascx.cs">
+      <DependentUpon>ShippingMethod.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Pages\Checkout\Units\ShippingMethod.ascx.designer.cs">
+      <DependentUpon>ShippingMethod.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Pages\ShoppingCart\ContentTypes\ShoppingCartPage.cs" />
     <Compile Include="Views\Pages\ShoppingCart\ShoppingCart.aspx.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>
@@ -663,6 +687,14 @@
     <ProjectReference Include="..\Mediachase.Commerce.Workflow\Mediachase.Commerce.Workflow.csproj">
       <Project>{413287f6-d606-4f42-ba25-4377a2c581f9}</Project>
       <Name>Mediachase.Commerce.Workflow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestPaymentMethod\TestPaymentMethod.csproj">
+      <Project>{739baf50-6268-4e34-a31a-8e6b72cf4ea9}</Project>
+      <Name>TestPaymentMethod</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestShippingMethod\TestShippingMethod.csproj">
+      <Project>{1d069302-1c3e-4219-a2f5-7dd91bc0ef6e}</Project>
+      <Name>TestShippingMethod</Name>
     </ProjectReference>
     <ProjectReference Include="..\Zara.Importer\Zara.Importer.csproj">
       <Project>{48c02861-ecac-4586-911f-c542fd38e2bf}</Project>

@@ -10,6 +10,9 @@
 	<zara:CartItems ID="cartItems" runat="server"/>
 	<div class="pull-right">
 		<zara:CartSummary runat="server" />
+		<asp:PlaceHolder runat="server" ID="navCheckout">
+			<a href="<%=CheckoutPageLink %>" class="btn-link">Checkout</a>
+		</asp:PlaceHolder>
 	</div>
 	<div class="clearfix"></div>
 </asp:Content>

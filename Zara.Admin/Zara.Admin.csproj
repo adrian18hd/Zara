@@ -1034,6 +1034,9 @@
     <Content Include="connectionStrings.config" />
     <Content Include="log.config" />
     <Content Include="log4net.config" />
+    <Content Include="PaymentConfiguration\TestPayment\ConfigurePayment.ascx" />
+    <Content Include="ShippingConfiguration\TestShipping\ConfigureShipping.ascx" />
+    <Content Include="ShippingConfiguration\TestShipping\ConfigureShippingMethod.ascx" />
     <Content Include="web.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
@@ -1856,6 +1859,37 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ShellStrings.resx</DependentUpon>
     </Compile>
+    <Compile Include="PaymentConfiguration\TestPayment\ConfigurePayment.ascx.cs">
+      <DependentUpon>ConfigurePayment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentConfiguration\TestPayment\ConfigurePayment.ascx.designer.cs">
+      <DependentUpon>ConfigurePayment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingConfiguration\TestShipping\ConfigureShipping.ascx.cs">
+      <DependentUpon>ConfigureShipping.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShippingConfiguration\TestShipping\ConfigureShipping.ascx.designer.cs">
+      <DependentUpon>ConfigureShipping.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingConfiguration\TestShipping\ConfigureShippingMethod.ascx.cs">
+      <DependentUpon>ConfigureShippingMethod.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShippingConfiguration\TestShipping\ConfigureShippingMethod.ascx.designer.cs">
+      <DependentUpon>ConfigureShippingMethod.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TestPaymentMethod\TestPaymentMethod.csproj">
+      <Project>{739baf50-6268-4e34-a31a-8e6b72cf4ea9}</Project>
+      <Name>TestPaymentMethod</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestShippingMethod\TestShippingMethod.csproj">
+      <Project>{1d069302-1c3e-4219-a2f5-7dd91bc0ef6e}</Project>
+      <Name>TestShippingMethod</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
